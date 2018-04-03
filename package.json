@@ -7,7 +7,7 @@
   "module": "index.next.js",
   "scripts": {
     "prepare": "npm run build && npm test",
-    "ci-test": "eslint -c .eslintrc --no-eslintrc -f junit ./ > reports/eslint.xml",
+    "ci-lint": "eslint -f junit index.next.js test.js rollup.config.js > reports/eslint.xml",
     "lint": "eslint index.next.js test.js rollup.config.js",
     "build": "rollup -c",
     "cov": "nyc report",

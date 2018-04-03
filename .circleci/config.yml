@@ -18,7 +18,8 @@ jobs:
           name: test
           command: |
             mkdir -p reports
-            npm run ci-test
+            npm run ci-lint
+            npm test
       - run:
           name: coverage
           command: npm run cov-html
