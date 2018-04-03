@@ -24,6 +24,7 @@ export const Logger = React.createContext(loggerAPI);
  *     </Consumer>
  * </Provider>
  */
+
 export const Provider = Logger.Provider;
 /**
  * Logger context consumer
@@ -38,7 +39,6 @@ export const Provider = Logger.Provider;
  * </Consumer>
  */
 export const Consumer = Logger.Consumer;
-
 
 /**
  * Consumer alias
