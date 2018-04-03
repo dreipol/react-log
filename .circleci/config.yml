@@ -23,10 +23,7 @@ jobs:
           name: coverage
           command: npm run cov-html
       - store_test_results:
-          path:
-            - reports
-            - coverage
+          path: reports
+
       - store_artifacts:
-          path:
-            - reports
-            - coverage
+          path: reports
