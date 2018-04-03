@@ -19,7 +19,14 @@ jobs:
           command: |
             mkdir -p reports
             npm run ci-test
+      - run:
+          name: coverage
+          command: npm run cov-html
       - store_test_results:
-          path: reports
+          path:
+            - reports
+            - coverage
       - store_artifacts:
-          path: reports
+          path:
+            - reports
+            - coverage

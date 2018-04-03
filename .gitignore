@@ -48,3 +48,7 @@ jspm_packages
 
 # Unit Tests
 /reports
+
+# Coverage output
+.nyc_output
+coverage
