@@ -1,6 +1,7 @@
 # react-log
 
 [![Build Status][circleci-image]][circleci-url]
+[![Coverage Status][coverage-image]][coverage-url]
 
 [![NPM version][npm-version-image]][npm-url]
 [![NPM downloads][npm-downloads-image]][npm-url]
@@ -46,6 +47,10 @@ render(
 [npm-downloads-image]: http://img.shields.io/npm/dm/@dreipol/react-log.svg?style=flat-square
 
 [npm-url]: https://npmjs.org/package/@dreipol/react-log
+
+[coverage-image]:https://img.shields.io/coveralls/dreipol/react-log/master.svg?style=flat-square
+[coverage-url]:https://coveralls.io/r/dreipol/react-log/?branch=master
+
 
 ## API
 
