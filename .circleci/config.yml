@@ -22,7 +22,9 @@ jobs:
             npm test
       - run:
           name: coverage
-          command: npm run cov-html
+          command: |
+            npm run cov
+            npm run cov-html
       - store_test_results:
           path: reports
 
