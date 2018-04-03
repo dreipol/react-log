@@ -4,17 +4,15 @@
 	(factory((global.ReactLogger = {}),global.React));
 }(this, (function (exports,React) { 'use strict';
 
-React = React && React.hasOwnProperty('default') ? React['default'] : React;
-
 // TODO: replace this object with the the logger API
-var loggerAPI = console;
+const loggerAPI = console;
 
 /**
  * Logger context creation. It's an object containing the `<Provider/>` and the `<Consumer/>`
  * @type { Consumer, Provider }
  * @link https://reactjs.org/docs/context.html#api
  */
-var Logger = React.createContext(loggerAPI);
+const Logger = React.createContext(loggerAPI);
 
 /**
  * Logger context Provider. It can be used to override the default log methods
@@ -31,7 +29,7 @@ var Logger = React.createContext(loggerAPI);
  * </Provider>
  */
 
-var Provider = Logger.Provider;
+const Provider = Logger.Provider;
 /**
  * Logger context consumer
  * @type { Consumer }
@@ -44,7 +42,7 @@ var Provider = Logger.Provider;
  *     { ({log}) => <App log={log}/> }
  * </Consumer>
  */
-var Consumer = Logger.Consumer;
+const Consumer = Logger.Consumer;
 
 exports.Logger = Logger;
 exports.Provider = Provider;

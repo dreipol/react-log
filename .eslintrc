@@ -1,8 +1,4 @@
 extends: "@dreipol/eslint-config"
-parser: babel-eslint
 env:
   mocha: true
-
-plugins:
-  - react
 
