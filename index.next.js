@@ -2,19 +2,14 @@ import React from 'react';
 
 // TODO: replace this object with the the logger API
 const loggerAPI = {
-    log() {
-
+    log(message) {
+        return console.log(message);
     },
 };
 
-export function wrap(Component) {
-    class Logger extends React.Component {
-        render() {
-            return <Component {...this.props} {...this.context} />;
-        }
-    }
 
-    Logger.contextTypes = loggerAPI;
+export const Logger = React.createContext(loggerAPI);
+export const Provider = Logger.Provider;
+export const Consumer = Logger.Consumer;
 
-    return Logger;
-}
+export default Consumer;

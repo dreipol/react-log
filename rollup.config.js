@@ -12,6 +12,7 @@ export default {
             jsnext: true,
         }),
     ],
+    external: ['react'],
     output: [
         {
             file: 'react-log.js',

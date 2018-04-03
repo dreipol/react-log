@@ -1,3 +1,10 @@
+### PyCharm
+# Don't ignore `.idea` folders in descendant directories as they are part of the template:
+!/**/.idea
+
+# Ignore the `.idea` folder in the root directory, as we don't want to track this project's editor config:
+/.idea
+
 # Logs
 logs
 *.log
