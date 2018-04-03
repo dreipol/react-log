@@ -42,14 +42,15 @@ export const Consumer = Logger.Consumer;
 
 /**
  * Consumer alias
+ * @name ReactLogger
  * @type { Consumer }
  * @see {@link https://reactjs.org/docs/context.html#consumer}
  * @example
  *
- * import Logger from '@dreipol/react-log'
+ * import ReactLogger from '@dreipol/react-log'
  *
- * <Logger>
+ * <ReactLogger>
  *     { ({log}) => <App log={log}/> }
- * </Logger>
+ * </ReactLogger>
  */
 export default Consumer;

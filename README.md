@@ -56,7 +56,7 @@ render(
 -   [Logger](#logger)
 -   [Provider](#provider)
 -   [Consumer](#consumer)
--   [index.next](#indexnext)
+-   [ReactLogger](#reactlogger)
 
 ### Logger
 
@@ -100,7 +100,7 @@ import { Consumer } from '@dreipol/react-log'
 </Consumer>
 ```
 
-### index.next
+### ReactLogger
 
 -   **See: <https://reactjs.org/docs/context.html#consumer>**
 
@@ -111,9 +111,9 @@ Type: [Consumer](#consumer)
 **Examples**
 
 ```jsx
-import Logger from '@dreipol/react-log'
+import ReactLogger from '@dreipol/react-log'
 
-<Logger>
+<ReactLogger>
     { ({log}) => <App log={log}/> }
-</Logger>
+</ReactLogger>
 ```
