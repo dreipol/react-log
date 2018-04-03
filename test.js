@@ -21,6 +21,7 @@ describe('react-log', () => {
         const Elm = class extends React.PureComponent {
             componentDidMount() {
                 assert.ok(this.props.log);
+                assert.doesNotThrow(this.props.log);
                 done();
             }
             render() {

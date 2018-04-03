@@ -15,6 +15,7 @@ export default {
     external: ['react'],
     output: [
         {
+            name: 'ReactLogger',
             file: 'react-log.js',
             format: 'umd',
         },
