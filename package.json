@@ -51,5 +51,9 @@
     "rollup": "^0.52.1",
     "rollup-plugin-node-resolve": "^3.0.0"
   },
+  "peerDependencies": {
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
+  },
   "dependencies": {}
 }
