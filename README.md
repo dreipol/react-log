@@ -14,7 +14,7 @@ import react-log from 'react-log'
 
 ```
 
-[circleci-image]:https://circleci.com/gh/dreipol/react-log/tree/master.svg?style=svg&circle-token=
+[circleci-image]:https://circleci.com/gh/dreipol/react-log/tree/master.svg?style=svg&circle-token=4fbc94f02a84443a9d0906866b3b858a0f45535c
 [circleci-url]:https://circleci.com/gh/dreipol/react-log/tree/master
 
 [license-image]:http://img.shields.io/badge/license-MIT-000000.svg?style=flat-square
