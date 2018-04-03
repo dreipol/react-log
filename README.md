@@ -64,6 +64,8 @@ Logger context creation. It's an object containing the `<Provider/>` and the `<C
 
 ### Provider
 
+-   **See: <https://reactjs.org/docs/context.html#provider>**
+
 Logger context Provider. It can be used to override the default log methods
 
 Type: [Provider](#provider)
@@ -82,6 +84,8 @@ import { Consumer, Provider } from '@dreipol/react-log'
 
 ### Consumer
 
+-   **See: <https://reactjs.org/docs/context.html#consumer>**
+
 Logger context consumer
 
 Type: [Consumer](#consumer)
@@ -97,6 +101,8 @@ import { Consumer } from '@dreipol/react-log'
 ```
 
 ### index.next
+
+-   **See: <https://reactjs.org/docs/context.html#consumer>**
 
 Consumer alias
 

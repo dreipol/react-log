@@ -13,7 +13,7 @@ export const Logger = React.createContext(loggerAPI);
 /**
  * Logger context Provider. It can be used to override the default log methods
  * @type { Provider }
- * @link https://reactjs.org/docs/context.html#provider
+ * @see {@link https://reactjs.org/docs/context.html#provider}
  * @example
  *
  * import { Consumer, Provider } from '@dreipol/react-log'
@@ -28,7 +28,7 @@ export const Provider = Logger.Provider;
 /**
  * Logger context consumer
  * @type { Consumer }
- * @link https://reactjs.org/docs/context.html#consumer
+ * @see {@link https://reactjs.org/docs/context.html#consumer}
  * @example
  *
  * import { Consumer } from '@dreipol/react-log'
@@ -43,7 +43,7 @@ export const Consumer = Logger.Consumer;
 /**
  * Consumer alias
  * @type { Consumer }
- * @link https://reactjs.org/docs/context.html#consumer
+ * @see {@link https://reactjs.org/docs/context.html#consumer}
  * @example
  *
  * import Logger from '@dreipol/react-log'
