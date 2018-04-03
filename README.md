@@ -70,7 +70,7 @@ Type: [Provider](#provider)
 
 **Examples**
 
-```javascript
+```jsx
 import { Consumer, Provider } from '@dreipol/react-log'
 
 <Provider value={console}>
@@ -88,7 +88,7 @@ Type: [Consumer](#consumer)
 
 **Examples**
 
-```javascript
+```jsx
 import { Consumer } from '@dreipol/react-log'
 
 <Consumer>
@@ -104,7 +104,7 @@ Type: [Consumer](#consumer)
 
 **Examples**
 
-```javascript
+```jsx
 import Logger from '@dreipol/react-log'
 
 <Logger>

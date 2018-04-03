@@ -13,7 +13,7 @@
     "cov": "nyc report",
     "cov-html": "nyc report --reporter html --report-dir reports/coverage",
     "pretest": "npm run build",
-    "doc": "documentation readme index.next.js -s API",
+    "doc": "documentation readme index.next.js -s API && sed -i .bk 's/```javascript/```jsx/g' README.md && rm *.bk",
     "test": "npm run lint && nyc mocha test.js"
   },
   "files": [
