@@ -48,9 +48,9 @@ render(
 
 [npm-url]: https://npmjs.org/package/@dreipol/react-log
 
-[coverage-image]:https://img.shields.io/coveralls/dreipol/react-log/master.svg?style=flat-square
-[coverage-url]:https://coveralls.io/r/dreipol/react-log/?branch=master
+[coverage-image]: https://img.shields.io/coveralls/dreipol/react-log/master.svg?style=flat-square
 
+[coverage-url]: https://coveralls.io/r/dreipol/react-log/?branch=master
 
 ## API
 
@@ -64,6 +64,8 @@ render(
 -   [ReactLogger](#reactlogger)
 
 ### Logger
+
+-   **See: <https://reactjs.org/docs/context.html#api>**
 
 Logger context creation. It's an object containing the `<Provider/>` and the `<Consumer/>`
 

@@ -6,7 +6,7 @@ const loggerAPI = console;
 /**
  * Logger context creation. It's an object containing the `<Provider/>` and the `<Consumer/>`
  * @type { Consumer, Provider }
- * @link https://reactjs.org/docs/context.html#api
+ * @see {@link https://reactjs.org/docs/context.html#api}
  */
 export const Logger = React.createContext(loggerAPI);
 
