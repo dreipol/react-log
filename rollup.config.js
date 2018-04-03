@@ -15,9 +15,19 @@ export default {
     external: ['react'],
     output: [
         {
+            exports: 'named',
             name: 'ReactLogger',
-            file: 'react-log.js',
+            file: 'dist/umd.react-log.js',
             format: 'umd',
+            globals: {
+                react: 'React',
+            },
+        },
+        {
+            exports: 'named',
+            name: 'ReactLogger',
+            file: 'dist/cjs.react-log.js',
+            format: 'cjs',
         },
     ],
 };

@@ -2,7 +2,8 @@
   "name": "@dreipol/react-log",
   "version": "0.0.0",
   "description": "React debugging helpers",
-  "main": "react-log.js",
+  "main": "dist/cjs.react-log.js",
+  "browser": "dist/umd.react-log.js",
   "jsnext:main": "index.next.js",
   "module": "index.next.js",
   "scripts": {
@@ -17,6 +18,7 @@
     "test": "npm run lint && nyc mocha test.js"
   },
   "files": [
+    "dist",
     "index.next.js"
   ],
   "repository": {
