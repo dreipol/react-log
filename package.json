@@ -38,6 +38,7 @@
   "homepage": "https://github.com/dreipol/react-log#readme",
   "devDependencies": {
     "@dreipol/eslint-config": "^4.0.0",
+    "@dreipol/vue-log": "0.0.3",
     "coveralls": "^3.0.0",
     "documentation": "^6.1.0",
     "eslint": "^4.13.1",

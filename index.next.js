@@ -1,7 +1,8 @@
 import React from 'react';
+import { createLogger } from '@dreipol/vue-log/src/create-logger';
+import { presets } from '@dreipol/vue-log/src/presets';
 
-// TODO: replace this object with the the logger API
-const loggerAPI = console;
+const loggerAPI = createLogger({}, presets);
 
 /**
  * Logger context creation. It's an object containing the `<Provider/>` and the `<Consumer/>`

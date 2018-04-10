@@ -8,6 +8,16 @@ export default {
             jsnext: true,
             ignore: ['react'],
         }),
+        // ignore the coverage of riot external modules like riot-tmpl
+        {
+            transform(code) {
+                return {
+                    code: code.replace(/(export (const presets|function createLogger))/g, function(m) {
+                        return ['/* istanbul ignore next */', m].join('\n');
+                    }),
+                };
+            },
+        },
     ],
     interop: false,
     external: ['react'],
