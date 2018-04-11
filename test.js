@@ -20,8 +20,13 @@ describe('react-log', () => {
     it('The Logger Consumer provides the log API to any child Component', (done) => {
         const Elm = class extends React.PureComponent {
             componentDidMount() {
-                assert.ok(this.props.log);
-                assert.doesNotThrow(this.props.log);
+                const methods = ['log', 'warn', 'error', 'debug'];
+
+                methods.forEach(method => {
+                    assert.ok(this.props[method]);
+                    assert.doesNotThrow(this.props[method]);
+                });
+
                 done();
             }
             render() {
@@ -30,7 +35,12 @@ describe('react-log', () => {
         };
 
         const el = render(
-            React.createElement('div', null, React.createElement(Consumer, null, ({ log }) => React.createElement(Elm, { log }))),
+            React.createElement('div', null, React.createElement(Consumer, null, ({ log, warn, error, debug }) => React.createElement(Elm, {
+                log,
+                warn,
+                error,
+                debug,
+            }))),
             document.createElement('div')
         );
 

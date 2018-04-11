@@ -10,7 +10,7 @@
     "prepare": "npm run build && npm test",
     "ci-lint": "eslint -f junit index.next.js test.js rollup.config.js > reports/eslint.xml",
     "lint": "eslint index.next.js test.js rollup.config.js",
-    "build": "rollup -c",
+    "build": "rollup -c build/rollup.cjs.js && rollup -c build/rollup.umd.js",
     "cov": "nyc report --reporter=text-lcov | coveralls",
     "cov-html": "nyc report --reporter html --report-dir reports/coverage",
     "pretest": "npm run build",
@@ -38,7 +38,6 @@
   "homepage": "https://github.com/dreipol/react-log#readme",
   "devDependencies": {
     "@dreipol/eslint-config": "^4.0.0",
-    "@dreipol/vue-log": "0.0.3",
     "coveralls": "^3.0.0",
     "documentation": "^6.1.0",
     "eslint": "^4.13.1",
@@ -56,5 +55,7 @@
     "react": "^16.3.0",
     "react-dom": "^16.3.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@dreipol/abstract-log": "0.0.4"
+  }
 }
