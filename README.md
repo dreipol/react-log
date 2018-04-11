@@ -1,5 +1,7 @@
 # react-log
 
+React logger provider component for the [@dreipol/abstract-log](https://github.com/dreipol/abstract-log) helper
+
 [![Build Status][circleci-image]][circleci-url]
 [![Coverage Status][coverage-image]][coverage-url]
 
