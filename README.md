@@ -1,6 +1,7 @@
 # react-log
 
-React logger provider component for the [@dreipol/abstract-log](https://github.com/dreipol/abstract-log) helper
+React logger provider component for the [@dreipol/abstract-log](https://github.com/dreipol/abstract-log) helper.
+If you are a Vue.js user you could check also our [`@dreipol/vue-log`](https://github.com/dreipol/vue-log)
 
 [![Build Status][circleci-image]][circleci-url]
 [![Coverage Status][coverage-image]][coverage-url]
@@ -60,10 +61,24 @@ render(
 
 #### Table of Contents
 
+-   [create](#create)
 -   [Logger](#logger)
 -   [Provider](#provider)
 -   [Consumer](#consumer)
 -   [ReactLogger](#reactlogger)
+
+### create
+
+-   **See: <https://github.com/dreipol/abstract-log#config>**
+
+Create a new logger instance with your custom params and configs
+
+**Parameters**
+
+-   `target` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** target object that will be automatically extended with the logger methods (optional, default `{}`)
+-   `config` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** logger configuration (optional, default `createConfig()`)
+
+Returns **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** logger object
 
 ### Logger
 
