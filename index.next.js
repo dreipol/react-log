@@ -7,6 +7,13 @@ import { createLogger, createConfig } from '@dreipol/abstract-log';
  * @see {@link https://github.com/dreipol/abstract-log#config}
  * @param   {Object} config - logger configuration
  * @return {Object} logger object
+ * @example
+ *
+ * import { create } from '@dreipol/react-log'
+ *
+ * const logger = create()
+ *
+ * logger.warn('This is a warning!')
  */
 export const create = (target = {}, config = createConfig()) => createLogger(target, config);
 

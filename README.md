@@ -78,6 +78,16 @@ Create a new logger instance with your custom params and configs
 -   `target` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** target object that will be automatically extended with the logger methods (optional, default `{}`)
 -   `config` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** logger configuration (optional, default `createConfig()`)
 
+**Examples**
+
+```jsx
+import { create } from '@dreipol/react-log'
+
+const logger = create()
+
+logger.warn('This is a warning!')
+```
+
 Returns **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** logger object
 
 ### Logger
