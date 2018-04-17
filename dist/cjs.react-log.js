@@ -5,15 +5,21 @@ Object.defineProperty(exports, '__esModule', { value: true });
 var React = require('react');
 var abstractLog = require('@dreipol/abstract-log');
 
-const loggerAPI = abstractLog.createLogger({}, abstractLog.createConfig());
-
+/**
+ * Create a new logger instance with your custom params and configs
+ * @param   {Object} target - target object that will be automatically extended with the logger methods
+ * @see {@link https://github.com/dreipol/abstract-log#config}
+ * @param   {Object} config - logger configuration
+ * @return {Object} logger object
+ */
+const create = (target = {}, config = abstractLog.createConfig()) => abstractLog.createLogger(target, config);
 
 /**
  * Logger context creation. It's an object containing the `<Provider/>` and the `<Consumer/>`
  * @type { Consumer, Provider }
  * @see {@link https://reactjs.org/docs/context.html#api}
  */
-const Logger = React.createContext(loggerAPI);
+const Logger = React.createContext(create());
 
 /**
  * Logger context Provider. It can be used to override the default log methods
@@ -45,6 +51,7 @@ const Provider = Logger.Provider;
  */
 const Consumer = Logger.Consumer;
 
+exports.create = create;
 exports.Logger = Logger;
 exports.Provider = Provider;
 exports.Consumer = Consumer;

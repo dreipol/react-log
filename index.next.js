@@ -1,15 +1,21 @@
 import React from 'react';
 import { createLogger, createConfig } from '@dreipol/abstract-log';
 
-const loggerAPI = createLogger({}, createConfig());
-
+/**
+ * Create a new logger instance with your custom params and configs
+ * @param   {Object} target - target object that will be automatically extended with the logger methods
+ * @see {@link https://github.com/dreipol/abstract-log#config}
+ * @param   {Object} config - logger configuration
+ * @return {Object} logger object
+ */
+export const create = (target = {}, config = createConfig()) => createLogger(target, config);
 
 /**
  * Logger context creation. It's an object containing the `<Provider/>` and the `<Consumer/>`
  * @type { Consumer, Provider }
  * @see {@link https://reactjs.org/docs/context.html#api}
  */
-export const Logger = React.createContext(loggerAPI);
+export const Logger = React.createContext(create());
 
 /**
  * Logger context Provider. It can be used to override the default log methods

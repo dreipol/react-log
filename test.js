@@ -5,7 +5,7 @@ const assert = require('assert');
 const React = require('react');
 const { render } = require('react-dom');
 const defaultExport = require('./').default;
-const { Logger, Consumer, Provider } = require('./');
+const { Logger, Consumer, Provider, create } = require('./');
 
 /* eslint-disable max-nested-callbacks, class-methods-use-this */
 
@@ -14,6 +14,7 @@ describe('react-log', () => {
         assert.ok(Logger);
         assert.ok(Consumer);
         assert.ok(Provider);
+        assert.ok(create);
         assert.equal(Consumer, defaultExport);
     });
 
