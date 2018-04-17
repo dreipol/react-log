@@ -1,6 +1,6 @@
 # react-log
 
-React logger provider component for the [@dreipol/abstract-log](https://github.com/dreipol/abstract-log) helper.
+React logger provider component for the [@dreipol/abstract-log](https://github.com/dreipol/abstract-log) helper.<br/>
 If you are a Vue.js user you could check also our [`@dreipol/vue-log`](https://github.com/dreipol/vue-log)
 
 [![Build Status][circleci-image]][circleci-url]
