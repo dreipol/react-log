@@ -2,7 +2,9 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var React = require('react');
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+
+var React = _interopDefault(require('react'));
 var abstractLog = require('@dreipol/abstract-log');
 
 /**
@@ -11,6 +13,13 @@ var abstractLog = require('@dreipol/abstract-log');
  * @see {@link https://github.com/dreipol/abstract-log#config}
  * @param   {Object} config - logger configuration
  * @return {Object} logger object
+ * @example
+ *
+ * import { create } from '@dreipol/react-log'
+ *
+ * const logger = create()
+ *
+ * logger.warn('This is a warning!')
  */
 const create = (target = {}, config = abstractLog.createConfig()) => abstractLog.createLogger(target, config);
 
@@ -55,4 +64,4 @@ exports.create = create;
 exports.Logger = Logger;
 exports.Provider = Provider;
 exports.Consumer = Consumer;
-exports['default'] = Consumer;
+exports.default = Consumer;
