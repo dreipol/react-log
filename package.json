@@ -1,6 +1,6 @@
 {
   "name": "@dreipol/react-log",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "React debugging helpers",
   "main": "dist/cjs.react-log.js",
   "browser": "dist/umd.react-log.js",
