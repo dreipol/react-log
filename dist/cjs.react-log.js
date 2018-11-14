@@ -9,10 +9,10 @@ var abstractLog = require('@dreipol/abstract-log');
 
 /**
  * Create a new logger instance with your custom params and configs
- * @param   {Object} target - target object that will be automatically extended with the logger methods
+ * @param   {object} target - target object that will be automatically extended with the logger methods
  * @see {@link https://github.com/dreipol/abstract-log#config}
- * @param   {Object} config - logger configuration
- * @return {Object} logger object
+ * @param   {object} config - logger configuration
+ * @return {object} logger object
  * @example
  *
  * import { create } from '@dreipol/react-log'
